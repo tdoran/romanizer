@@ -1,0 +1,17 @@
+{
+  "name": "romanizer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon romanizer.test.js | tap-spec"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.17.1",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.9.0"
+  }
+}

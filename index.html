@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Romanizer</title>
+</head>
+<body>
+    <main class="container">
+        <form action="form" id="js-form">
+            <label for="numInput" class="formInput">Enter a number</label>
+            <input type="text" id="numInput" required>
+            <button type="submit" class="form_button">Submit</button>
+        </form>
+        <div id="js-result"></div>
+
+    </main>
+
+    <script type="text/javascript" src="romanizer.js"></script>
+    <script type="text/javascript">
+    var form = document.getElementById("js-form");
+    var result = document.getElementById("js-result");
+    form.addEventListener('submit', function(){
+        event.preventDefault();
+        var roman = romanizer(input.value);
+        result.textContent = roman;
+    });
+    var input = document.getElementById("numInput");
+
+    </script>
+</body>
+</html>
